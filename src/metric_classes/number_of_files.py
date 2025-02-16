@@ -10,7 +10,8 @@ class NumberOfFiles:
     """
     Collects FileCursors and calculates number of C/C++ files
     """
-    __extensions: List[str] = [".cpp", ".h", ".c"]
+    __extensions: List[str] = [".h", ".hpp", ".c", ".C", ".cc", ".cpp",
+                               ".CPP", ".c++", ".cp", ".cxx"]
 
     def __init__(self, repo_path: str):
         self._name = "NUMBER_OF_FILES"
